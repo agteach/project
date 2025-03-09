@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<h1>Calculator App</h1>
+  <div class="inputs">
+    <input type="number" id="num1" placeholder="Number 1" step="any">
+    <input type="number" id="num2" placeholder="Number 2" step="any">
+  </div>
+  <div class="display">
+    Result: <span id="result-el">0</span>
+  </div>
+  <div class="buttons">
+    <button onclick="calculate({ operation: 'add' })">Add</button>
+    <button onclick="calculate({ operation: 'subtract' })">Subtract</button>
+    <button onclick="calculate({ operation: 'multiply' })">Multiply</button>
+    <button onclick="calculate({ operation: 'divide' })">Divide</button>
+  </div>
+  <button onclick="save()">Save Result</button>
+  <div class="history">
+    History: <span id="save-el"></span>
+  </div>
+  <script src="index.js"></script>
+  </body>
+  </html>

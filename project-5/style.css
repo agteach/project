@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(backgraund.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(179, 200, 245);
+    font-weight: bold;
+
+}
+
+.clock{
+    display: flex;
+
+}
+
+.clock div{
+  margin: 5px;  
+  position: relative;
+
+}
+
+.clock span{
+ width: 100px;   
+ height: 80px;
+ background: slateblue;
+ opacity: .8;
+ color: white;
+ display: flex;
+ align-items: center;
+ padding: 0.5rem;
+ font-size: 50px;
+ text-shadow: 2px 2px rgba(0, 0, 0, .3);
+}
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: .8;
+}
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
+p{
+    color: #fff;
+    padding: 3em;
+}
+/*nav styling*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    color: white;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+
+.nav .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+.nav .links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav .links ul li {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav .links ul li:hover {
+    color: #3498DB; 
+}
+
+
+.nav .reminder span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav .reminder span:hover {
+    color: #E74C3C; 
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    
+     .clock{
+        display: block;
+        margin-top: 30px;
+    }
+}
