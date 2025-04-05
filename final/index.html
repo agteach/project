@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Hajj and Umrah pilgrimage services with complete packages and expert guidance">
+  <title>Hajj & Umrah - Spiritual Journey Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/illustration-of-kaaba-vector.jpg" type="image/png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <div class="logo">
+        <a href="index.html" aria-label="Home page">
+          <img src="images/illustration-of-kaaba-vector.jpg" alt="Kaaba logo" width="40" height="40">
+        </a>
+        <h1>Hajj & Umrah</h1>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <button class="close-icon" aria-label="Close menu">
+          <i class="fa fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#services" class="nav-link">SERVICES</a></li>
+          <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+          <li><a href="#booking" class="nav-link">BOOKING</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Your Spiritual Journey Awaits</h2>
+      <p>Experience Hajj & Umrah with expert guidance and complete packages</p>
+      <a href="#services" class="hero-btn">Explore Packages</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/kaaba.jpg" alt="Hajj Package" loading="lazy">
+        <div class="service-content">
+          <h3>Hajj Packages</h3>
+          <p>Complete Hajj packages including flights, accommodation, and guided ziyarat</p>
+          <button class="service-btn" data-service="hajj">Learn More</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="images/umrah.jpg" alt="Umrah Package" loading="lazy">
+        <div class="service-content">
+          <h3>Umrah Packages</h3>
+          <p>Flexible Umrah packages available throughout the year with various options</p>
+          <button class="service-btn" data-service="umrah">Learn More</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="images/travel.jpg" alt="travel insuranse" loading="lazy">
+        <div class="service-content">
+          <h3>Travel Insurance</h3>
+          <p>Special arrangements for travel insurance with dedicated guides and transportation</p>
+          <button class="service-btn" data-service="travel">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="section-title">What Pilgrims Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="images/ali.jpg" alt="Ali Khan" loading="lazy">
+          <div class="testimonial-info">
+            <h3>Ali Khan</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>"The Hajj package was perfectly arranged. Our guide was knowledgeable and made the experience spiritually uplifting."</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="images/fatima.jpg" alt="Fatima Ahmed" loading="lazy">
+          <div class="testimonial-info">
+            <h3>Fatima Ahmed</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p>"Our Umrah trip was seamless from start to finish. The hotel was close to Haram and the staff was very supportive."</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="images/muhammad.jpg" alt="Muhammad Yusuf" loading="lazy">
+          <div class="testimonial-info">
+            <h3>Muhammad Yusuf</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>"The Hajj package was perfectly arranged. Our guide was knowledgeable and made the experience spiritually uplifting."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="booking">
+    <h2 class="section-title">Book Your Journey</h2>
+    <form id="bookingForm" class="booking-form">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="package">Package Type</label>
+        <select id="package" name="package" required>
+          <option value="">Select a package</option>
+          <option value="hajj">Hajj Package</option>
+          <option value="umrah">Umrah Package</option>
+          <option value="group">Travel Insurance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Special Requests</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">
+        <span class="btn-text">Submit Request</span>
+        <span class="loading-icon"><i class="fas fa-spinner fa-spin"></i></span>
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="about">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#booking">Booking</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Jimma, Ethiopia</p>
+        <p><i class="fas fa-phone"></i> +251616437936</p>
+        <p><i class="fas fa-envelope"></i> info@hajjumrah.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Hajj & Umrah Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
